@@ -1,0 +1,64 @@
+<html>
+<head>
+<title> vyrovneno </title>
+
+<style>
+
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+ }
+input {
+ border: 3px outset #999999;
+ }
+input:focus {
+ border: 3px inset #aaaaaa;
+ }
+.panel {
+ background-color: #333333;
+ border-radius: calc(5vw - 50px);
+ font-size: 2vw;
+ display: flex;
+ flex-direction: column;
+ padding: 1vw;
+ margin: 1vw;
+ }
+.okno {
+ align-items: center;
+ display: flex;
+ height: 100%;
+ white-space: nowrap;
+ background-color: #555555;
+ float: right;
+ }
+.nadokno {
+ display: inline-flex;
+ justify-content: flex-end;
+ align-items: center;
+ float: right;
+ padding: 0vw 5vw 0vw 0vw;
+ }
+.podokno {
+ float: right;
+ margin: 0vw 1vw 0vw 0vw;
+ }
+
+</style>
+
+<body>
+
+<div class="panel">
+ <div class="nadokno">
+  <span class="podokno">title: </span>
+  <span class="okno"><input type="text" class="okno"></span>
+ </div>
+ <div class="nadokno">
+  <span class="podokno">description: </span>
+  <span class="okno"><input type="text" class="okno"></span>
+ </div>
+</div>
+
+</body>
+</hmtl>
